@@ -1,0 +1,5 @@
+# Archivos temporales y backups
+tmp/
+*.bak
+*.tmp
+.env
