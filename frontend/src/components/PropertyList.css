@@ -1,0 +1,35 @@
+.property-list {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.property-list h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+.property-list__row {
+  display: flex;
+  gap: 0.7rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  scroll-snap-type: x mandatory;
+}
+.property-list__row > * {
+  scroll-snap-align: start;
+}
+.property-list__row::-webkit-scrollbar {
+  height: 8px;
+  background: #fff;
+}
+.property-list__row::-webkit-scrollbar-thumb {
+  background: #FFA500;
+  border-radius: 4px;
+}

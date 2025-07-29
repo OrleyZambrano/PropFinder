@@ -1,8 +1,12 @@
 /* Estilos para plataforma inmobiliaria */
 .header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #fff;
+  color: #222;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .header-container {
@@ -16,7 +20,7 @@
 }
 
 .logo h1 {
-  color: white;
+  color: #222;
   font-size: 28px;
   margin: 0 0 5px 0;
   font-weight: bold;
@@ -39,7 +43,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.9);
+  color: #222;
   font-size: 15px;
   padding: 8px 12px;
   border-radius: 6px;
@@ -47,8 +51,8 @@
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+  background-color: #FFA500;
+  color: #fff;
 }
 
 .header-actions {
@@ -67,29 +71,81 @@
 }
 
 .btn-primary {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #FFA500;
+  color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #45a049;
+  background-color: #FF8C00;
 }
 
 .btn-secondary {
-  background-color: #FF6B35;
-  color: white;
+  background-color: #FFA500;
+  color: #fff;
 }
 
 .btn-secondary:hover {
-  background-color: #e55a2b;
+  background-color: #FF8C00;
 }
 
 .btn-chat {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #FFA500;
+  color: #fff;
+  border: 1px solid #FFA500;
 }
 
 .btn-chat:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #FF8C00;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header__nav a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.header__nav a:hover {
+  color: #FFA500;
+}
+
+.header__search {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header__search input {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #FFA500;
+  outline: none;
+  background: #fff;
+  color: #222;
+}
+
+.header__search button {
+  background: #FFA500;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.header__search button:hover {
+  background: #FF8C00;
+  color: #fff;
 }
