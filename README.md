@@ -1,10 +1,9 @@
-
 # PropFinder
 
 Plataforma inmobiliaria modular con pagos, chat en tiempo real y geolocalización.
 
-
 ## Tabla de Contenidos
+
 - [Descripción](#descripción)
 - [Funcionalidades principales](#funcionalidades-principales)
 - [Arquitectura](#arquitectura)
@@ -17,11 +16,12 @@ Plataforma inmobiliaria modular con pagos, chat en tiempo real y geolocalizació
 
 ---
 
-
 ## Descripción
+
 PropFinder es una plataforma inmobiliaria que permite a usuarios buscar propiedades y a agentes inmobiliarios publicar, gestionar y vender propiedades. Incluye sistema de pagos (Stripe/PayPal), chat en tiempo real (Supabase Messaging) y geolocalización (Google Maps).
 
 ## Funcionalidades principales
+
 - Listado de propiedades con búsqueda geoespacial (Google Maps, filtros avanzados)
 - Sistema de filtros avanzados (precio, ubicación, tipo, etc.)
 - Agendamiento de visitas a propiedades
@@ -30,7 +30,8 @@ PropFinder es una plataforma inmobiliaria que permite a usuarios buscar propieda
 - Panel de analytics para propietarios y agentes
 
 ## Arquitectura
-- **Frontend:** HTML, CSS, JavaScript (SPA o multipágina)
+
+- **Frontend:** nestjs
 - **Backend:** NestJS (Node.js, modular)
 - **Base de Datos:** PostgreSQL (Supabase)
 - **Autenticación:** Supabase Auth
@@ -40,6 +41,7 @@ PropFinder es una plataforma inmobiliaria que permite a usuarios buscar propieda
 - **Mapas:** Google Maps API
 
 ## Estructura de Carpetas
+
 ```
 PropFinder/
 │
@@ -72,37 +74,48 @@ PropFinder/
 ## Instalación y Configuración
 
 ### 1. Clonar el repositorio
+
 ```bash
 git clone https://github.com/OrleyZambrano/PropFinder.git
 cd PropFinder
 ```
 
 ### 2. Instalar dependencias
+
 #### Frontend
+
 ```bash
 cd frontend
 npm install
 ```
+
 #### Backend
+
 ```bash
 cd ../backend
 npm install
 ```
 
 ### 3. Configurar variables de entorno
+
 Copia el archivo `.env.example` a `.env` en cada módulo y completa los valores necesarios (Supabase, Stripe, PayPal, Google Maps, etc).
 
 ### 4. Ejecutar el proyecto
+
 #### Backend
+
 ```bash
 npm run start:dev
 ```
+
 #### Frontend
+
 ```bash
 npm start
 ```
 
 ## Flujo de Trabajo GitFlow
+
 - `main`: Rama principal de producción
 - `develop`: Rama de integración de desarrollo
 - `feature/*`: Ramas para nuevas funcionalidades (ej: `feature/frontend`)
@@ -110,12 +123,14 @@ npm start
 - `hotfix/*`: Ramas para correcciones urgentes en producción
 
 ### Ejemplo de creación de rama feature
+
 ```bash
 git checkout develop
 git checkout -b feature/nueva-funcionalidad
 ```
 
 ## Comandos Útiles
+
 - `git status` — Ver estado del repositorio
 - `git pull` — Traer últimos cambios
 - `git push` — Subir cambios
@@ -123,6 +138,7 @@ git checkout -b feature/nueva-funcionalidad
 - `npm start` — Iniciar frontend
 
 ## Tecnologías Principales
+
 - NestJS
 - Supabase (PostgreSQL, Auth, Storage, Messaging)
 - Stripe, PayPal
@@ -130,4 +146,5 @@ git checkout -b feature/nueva-funcionalidad
 - HTML, CSS, JavaScript
 
 ## Licencia
+
 MIT

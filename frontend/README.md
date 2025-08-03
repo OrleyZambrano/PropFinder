@@ -1,12 +1,63 @@
-# React + Vite
+# PropFinder Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend del portal inmobiliario PropFinder, desarrollado con Next.js y Material UI.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aplicación web moderna para búsqueda, publicación y gestión de propiedades inmobiliarias, con integración de chat en tiempo real, pagos y mapas.
 
-## Expanding the ESLint configuration
+## Tecnologías principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Material UI](https://mui.com/)
+- [Supabase](https://supabase.com/) (para autenticación y datos)
+
+## Estructura recomendada
+
+```
+frontend/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   └── utils/
+├── .env.local
+├── package.json
+└── README.md
+```
+
+## Instalación y uso
+
+1. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+2. Crea el archivo `.env.local` con tus variables de entorno (ejemplo: claves de Supabase, endpoints, Google Maps, etc).
+3. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+4. Accede a la app en [http://localhost:3000](http://localhost:3000)
+
+## Comandos útiles
+
+- `npm run dev` — Inicia el servidor de desarrollo
+- `npm run build` — Genera la build de producción
+- `npm start` — Inicia la app en modo producción
+
+## Recomendaciones
+
+- Usa componentes de Material UI para mantener coherencia visual
+- Organiza el código en componentes reutilizables dentro de `src/components`
+- Utiliza hooks y contextos para manejar estado global y autenticación
+- Integra el backend NestJS mediante llamadas a API REST o GraphQL
+
+## Despliegue
+
+Puedes desplegar fácilmente en Vercel, Google Cloud Run o cualquier proveedor compatible con Next.js.
+
+---
+
+Desarrollado por el equipo PropFinder.

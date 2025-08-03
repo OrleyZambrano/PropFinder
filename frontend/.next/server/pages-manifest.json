@@ -1,0 +1,9 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/admin/agentes": "pages/admin/agentes.js",
+  "/api/agent-retirar": "pages/api/agent-retirar.js",
+  "/api/agent-list": "pages/api/agent-list.js",
+  "/api/agent-request-list": "pages/api/agent-request-list.js"
+}
